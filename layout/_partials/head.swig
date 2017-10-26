@@ -114,7 +114,6 @@
   <meta property="fb:app_id" content="{{ theme.facebook_sdk.app_id }}" />
 {% endif %}
 
-
 {{
   open_graph({
     twitter_id: theme.twitter,
