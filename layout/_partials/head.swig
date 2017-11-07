@@ -155,3 +155,13 @@
 {% endif %}
 
 {% include 'head/custom-head.swig' %}
+<script>
+    (function(){
+        if('{{ page.password }}'){
+            if (prompt('文章暂未公开，如要访问请与作者联系！') !== '{{ page.password }}'){
+                alert('密码错误，请与作者联系！');
+                history.back();
+            }
+        }
+    })();
+</script>
